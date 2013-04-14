@@ -1,0 +1,432 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #080808;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/*******************  CONTAINERS  ***********************************/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.container {
+    width: 1060px;
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 100px auto 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 640px;
+    float: left;
+    margin-left: 60px;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f7f7f7;
+    float: left;
+    margin-left: 40px;
+}
+
+/******************  TEXT/HEADINGS  ******************************/
+body {
+    color: #080808;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 10px;
+}
+
+/******************  HEADER  ************************************/
+
+.header {
+    width: 100%;
+    background: #007FFF;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-wrapper {
+    width: 1060px;
+    margin: 20px auto;
+}
+
+.header h1 {
+    text-shadow: 1px 1px 1px #0059B3;
+}
+
+.header h2 {
+    font-size: 1.1em;
+}
+
+/******************  NAVIGATION/LINKS/LISTS  **************************/
+
+.nav {
+
+}
+
+.nav ul {
+
+}
+
+.nav li {
+
+}
+
+.nav li a {
+
+}
+
+a {
+    color: #06c;
+    text-decoration: none;
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+ul {
+
+}
+
+li {
+    list-style: none;
+}
+
+.list {
+    list-style-type: square;
+}
+
+/*****************  SOCIAL  *************************************/
+
+.sidebar .social {
+    margin-bottom: 30px;
+}
+
+.sidebar .social ul {
+    overflow: hidden;
+}
+
+.sidebar .social li {
+    list-style: none;
+    float: left;
+}
+
+.sidebar .social li:nth-child(n) {
+    margin-left: 12px;
+}
+
+.sidebar .social li a {
+    color: #080808;
+    text-decoration: none;
+}
+
+.sidebar .social li a:hover {
+    color: #06c;
+}
+
+/******************  PAGES  *************************************/
+
+/******************  POSTS  *************************************/
+
+.sidebar .recent-posts {
+    margin-bottom: 30px;
+}
+
+.post-title a {
+    color: #080808;
+}
+
+.entries .entry-date {
+    display: block;
+    width: 320px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.entries .entry-date p {
+    padding-left: 10px;
+}
+
+.entries .entry-date:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    border: 0.7em solid #f7f7f7;
+    right: -2em;
+    border-left-width:1.5em;
+    border-right-color: transparent;
+}
+
+.entries .entry-date p:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+/******************  MEDIA (images, video, icons)  *************************************/
+
+.twitter-feed {
+    width: 280px;
+    margin-left: 10px;
+}
+
+/******************  FOOTER  ************************************/
+
+.footer {
+    width: 100%;
+    height: 120px;
+    background: #080808;
+    font-size: 10px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.footer-wrapper {
+    width: 960px;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
