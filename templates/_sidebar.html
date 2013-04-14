@@ -1,0 +1,27 @@
+
+<div class="sidebar">
+	<div class="social">
+		<ul>
+			<li><a href="https://twitter.com/floraworley"><i class="icon-twitter icon-large"></i></a></li>
+			<li><a href="https://github.com/florapdx"><i class="icon-github icon-large"></i></a></li>
+			<li><i class="icon-envelope-alt icon-large"></i></li>
+			<li><a href=""><i class="icon-rss icon-large"></i></a></li>
+		</ul>
+	</div>
+	<div class="recent-posts">
+		{% if posts %}
+		<ul>
+		{% for post in posts[:5] %}
+			<li>
+			<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">{{ post.title }}</a>
+			<p>{{ post.date }}</p>
+			</li>
+		{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+	<div class="calendar"></div>
+	<div class="twitter-feed"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/floraworley" data-widget-id="310893861092327426">Tweets by @floraworley</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>

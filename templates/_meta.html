@@ -1,0 +1,10 @@
+
+{% if page.meta.description %}
+<meta name="description" content="{{ page.meta.description }}">
+{% endif %}
+{% if page.meta.author %}
+<meta name="author" content="{{ page.meta.author }}">
+{% endif %}
+{% if page.meta.keywords %}
+<meta name="keywords" content="{{ ", ".join(page.meta.keywords) }}">
+{% endif %}

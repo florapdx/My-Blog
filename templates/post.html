@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ post.title }}
+{% endblock title %}
+
+{% block content %}
+	<h1 class="post-title">{{ post.title }}</h1>
+	<p id="post-date" class="date">{{ post.date }}</p>
+	{{ post.html|safe }}
+	{% if post.tags %}
+		<p class="tags">Tags: {% for tag in post.tags %} {{tag}} {% endfor %}</p>
+	{% endif %}
+{% endblock content %}
