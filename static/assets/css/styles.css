@@ -75,36 +75,43 @@ body {
     width: 1060px;
     min-height: 100%;
     height: auto;
-    height: 100%;
-    margin: 100px auto 0 auto;
-    clear: both;
+    margin: 100px auto 30px auto;
+    padding-bottom: 50px;
     overflow: hidden;
 }
 
 .wrapper {
     width: 640px;
+    height: 100%;
     float: left;
-    margin-left: 60px;
+    margin-left: 300px;
+    padding-bottom: 50px;
 }
 
 .sidebar {
     width: 300px;
     background-color: #f7f7f7;
-    float: left;
-    margin-left: 40px;
+    position: absolute;
+    top: 104px;
+    left: 0;
 }
 
 /******************  TEXT/HEADINGS  ******************************/
 body {
-    color: #080808;
+    color: #555;
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 300;
-    line-height: 1.4em;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+i {
+    color: #555;
 }
 
 h1 {
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h2 {
@@ -125,50 +132,120 @@ h4 {
     margin-bottom: 10px;
 }
 
+.page-title {
+}
+
+.page-start-text {
+    padding-bottom: 20px;
+    display: block;
+    background: #f7f7f7;
+}
+
 /******************  HEADER  ************************************/
 
 .header {
     width: 100%;
-    background: #007FFF;
+    background: #0E90D2;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .header-wrapper {
     width: 1060px;
-    margin: 20px auto;
+    margin: 10px auto;
+    overflow: hidden;
 }
 
 .header h1 {
-    text-shadow: 1px 1px 1px #0059B3;
+    font-size: 1.8em;
+    #text-shadow: 1px 1px 1px #0059B3;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .header h2 {
-    font-size: 1.1em;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+#logo-title {
+    width: 69%;
+    float: left;
+}
+
+.social {
+    width: 30%;
+    float: right;
+}
+
+.social {
+    #width: 240px;
+    #margin: 0 auto 30px auto;
+}
+
+.social ul {
+    overflow: hidden;
+}
+
+.social li {
+    list-style: none;
+    float: left;
+}
+
+.social li:nth-child(n) {
+    margin-left: 12px;
+}
+
+.social li a {
+    border-bottom: none;
+}
+
+.social li a > i {
+    color: #fff;
+}
+
+.social a:hover > i {
+    color: #5BC0DE;
 }
 
 /******************  NAVIGATION/LINKS/LISTS  **************************/
 
 .nav {
-
 }
 
 .nav ul {
-
+    width: 80%;
+    padding-left: 30px;
 }
 
 .nav li {
+    background: #0E90D2;
+    #text-align: center;
+}
 
+.nav i {
+    color: #fff;
+    padding-left: 20px;
 }
 
 .nav li a {
+    display: block;
+    color: #fff;
+    padding: 6px 0;
+}
 
+.nav li a:hover {
+    background: #5BC0DE;
 }
 
 a {
-    color: #06c;
+    color: #0E90D2;
     text-decoration: none;
     border-bottom: 1px dashed #dfdfdf;
+}
+
+a:hover {
+    color: #5BC0DE;
 }
 
 ul {
@@ -185,8 +262,13 @@ li {
 
 /*****************  SOCIAL  *************************************/
 
-.sidebar .social {
-    margin-bottom: 30px;
+.sidebar-heading {
+    text-align: center;
+}
+
+/*.sidebar .social {
+    width: 240px;
+    margin: 0 auto 30px auto;
 }
 
 .sidebar .social ul {
@@ -203,12 +285,94 @@ li {
 }
 
 .sidebar .social li a {
-    color: #080808;
-    text-decoration: none;
+    border-bottom: none;
 }
 
-.sidebar .social li a:hover {
-    color: #06c;
+.sidebar .social li a > i {
+    color: #555;
+}
+
+.sidebar .social a:hover > i {
+    color: #0E90D2;
+}
+*/
+.sidebar .meetup {
+    margin: 30px 0;
+}
+
+.sidebar #meetup {
+  height: 400px;
+  width: 280px;
+  position: relative;
+  overflow: auto;
+  line-height: 1em;
+  font-size: 0.9em;
+  word-wrap: break-word !important;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.sidebar #meetup ul {
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar #meetup li {
+  width: 100%;
+  overflow: auto;
+  border-bottom: 4px solid #f7f7f7;
+}
+
+.sidebar .meetup_group_icon {
+  float: left;
+  max-width: 60px;
+  max-height: 60px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.sidebar .meetup_listing_group {
+  font-size: 1.3em;
+  font-variant: small-caps;
+  padding: 6px 0;
+  margin: 0;
+}
+
+.sidebar .meetup_listing_event_title {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin: 0;
+}
+
+.sidebar .meetup_event_date {
+  line-height: 1.2em;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.sidebar .meetup_listing_url {
+  line-height: 1.2em;
+  padding: 0 0 8px 0;
+  margin: 6px 0 10px 0;
+}
+
+.sidebar .meetup_listing_url a {
+  width: 74%;
+  float: right;
+  display: block;
+  font-size: 0.9em;
+  text-decoration: none;
+  border-bottom: none;
+  color: #4d4d4d;
+  padding: 0 0 10px 0;
 }
 
 /******************  PAGES  *************************************/
@@ -219,22 +383,26 @@ li {
     margin-bottom: 30px;
 }
 
-.post-title a {
-    color: #080808;
+.entry {
+    margin-bottom: 50px;
 }
 
-.entries .entry-date {
+.entry-title a {
+    #color: #080808;
+}
+
+.entry-date {
     display: block;
     width: 320px;
     background-color: #f7f7f7;
     position: relative;
 }
 
-.entries .entry-date p {
+.entry-date p {
     padding-left: 10px;
 }
 
-.entries .entry-date:after {
+.entry-date:after {
     content: "";
     position: absolute;
     display: block;
@@ -245,7 +413,7 @@ li {
     border-right-color: transparent;
 }
 
-.entries .entry-date p:after {
+.entry-date p:after {
     right: 0;
     border-width: 1em 1em 0 0;
 }
@@ -257,27 +425,44 @@ li {
     margin-left: 10px;
 }
 
+.portrait {
+    #float: right;
+}
+
+.gallery {
+    margin: 30px 0;
+    overflow: auto;
+}
+
+.gallery-img {
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+}
+
 /******************  FOOTER  ************************************/
 
 .footer {
     width: 100%;
-    height: 120px;
-    background: #080808;
-    font-size: 10px;
+    height: 100px;
+    clear: both;
+    background: #0E90D2;
+    font-size: 14px;
     color: #fff;
+    text-align: center;
     padding-bottom: 10px;
+    margin-bottom: -40px;
+}
+
+.footer i {
+    color: #fff;
 }
 
 .footer-wrapper {
-    width: 960px;
+    width: 760px;
     margin: 20px auto;
+    padding-top: 20px;
 }
-
-
-
-
-
-
 
 
 
