@@ -1,6 +1,6 @@
-title: Learn Git and Github
+title: Get Started with Git and Github
 date: January 2013
-tags: tools, tutorials
+tags: tutorials
 summary: I bet if we were to poll 100 programmers about the most difficult tools to pick up as beginners, Git (and to a lesser extent Github) would be at the top of 99 of their lists. We won't cover all there is to know about Git and Github in this tutorial, but there should be enough here to get you started with the basics.
 
 ………………………………………………………………………
@@ -53,10 +53,11 @@ GitHub is a commercial, web-based service for hosting Git repositories. Github i
 <br />
 <br />
 
-Git Structures
-====
 
-##I. The Tree Metaphor:
+##Git Structures
+
+
+###I. The Tree Metaphor:
  
 Most VCSs employ a tree metaphor to describe repositories (or “repos”).
 <br />
@@ -103,7 +104,7 @@ _Two contexts for project branches_:
 <br />
 <br />
 
-##II. The Three States:
+###II. The Three States:
  
 _Git has three main states that your files can reside in on your machine_:
  
@@ -163,8 +164,8 @@ _* Files in your working directory can be in one of two states: tracked—files 
  
 
 
-Git Commands for Basic Use
-===
+##Git Commands for Basic Use
+
  
 ###Getting Started 
 
@@ -334,8 +335,9 @@ _When you switch between branches, the files that you work on (the "working copy
 <br />
 <br />
 
-Moving things around in Git (and clearing up some grey areas)
-===
+
+##Moving things around in Git (and clearing up some grey areas)
+
 
 ####“Merge” vs “Rebase”: 
 _There are two ways to combine branches—merge and rebase._
@@ -377,8 +379,9 @@ in "git pull", git tries to do your work for you. It is context sensitive, so Gi
 <br />
 <br />
 
-Work Collaboratively and Git Social on Github
-===
+
+##Work Collaboratively and Git Social on Github
+
  
 **Follow a friend**: once on page of someone you want to follow, click "Follow" button--that's it!
  
@@ -418,7 +421,7 @@ Things you can do after forking:
 <br />
 <br />
 
-##Sources and References
+###Sources and References
 
 [http://git-scm.com/book/en](http://git-scm.com/book/en)
 

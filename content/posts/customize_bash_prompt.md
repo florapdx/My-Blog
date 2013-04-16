@@ -57,12 +57,12 @@ ____________________________________________________________________
 
 	# This function lets us know which branch we are on when working in a local repo:
 	function parse_git_branch() {
-    	x=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'`
-    	if [[ "$x" == "" ]]; then
-      	echo ""
-    	else
-      	echo "$x "
-    	fi
+		x=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'`
+		if [[ "$x" == "" ]]; then
+		echo ""
+		else
+		echo "$x "
+		fi
 	}
 
 
