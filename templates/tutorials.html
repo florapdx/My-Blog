@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Tutorials{% endblock title %}
+
+{% block content %}
+	<h1 class="page-title">Tutorials</h1>
+	<p class="page-start-text">All of these tutorials can also be found on <a href="https://github.com/florapdx/pyladies_guides" alt="Github">Github</a>.</p>
+	{% for post in posts %}
+		{% if 'tutorials' in post.tags %}
+		<div class="entry">
+			<h2><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"><i class="icon-list-alt"></i> {{ post.title }}</a></h2>
+			<div class="entry-date"><p>{{ post.date }}</p></div>
+            <div class="summary">
+                <p>{{ post.summary }} <span><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"> More <i class="icon-hand-right"></i></a></span></p>
+            </div>
+        </div>
+		{% endif %}
+	{% endfor %}
+{% endblock content %}

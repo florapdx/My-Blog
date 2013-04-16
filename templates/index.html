@@ -3,17 +3,26 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h2>Tutorials</h2>
-    <div class="entries">
+    <div class="entries">  
     {% for post in posts %}
         <div class="entry">
             <div class="detail">
                 <h1 class="entry-title">
-                    <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">{{ post.title }}</a>
+                    {% if 'tutorials' in post.tags %}
+                        <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"><i class="icon-list-alt"></i> {{ post.title }}</a>
+                    {% else %}
+                        {% if 'community' in post.tags %}
+                            <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"><i class="icon-beaker"></i> {{ post.title }}</a>
+                        {% else %}
+                            {% if 'events' in post.tags %}
+                            <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"><i class="icon-calendar"></i> {{ post.title }}</a>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}    
                 </h1>
                 <div class="entry-date"><p>{{ post.date }}</p></div>
                 <div class="summary">
-                    <p>{{ post.summary }}</p>
+                    <p>{{ post.summary }} <span><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"> More <i class="icon-hand-right"></i></a></span></p>
                 </div>
             </div>
         </div>

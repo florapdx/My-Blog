@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock title %}
+
+{% block content %}
+<h1>Portfolio</h1>
+
+<p>Although I have been putting a lot of effort into learning Python, in particular, I continue to actively work on front-end projects. And while I try to throw most of my non-private, non-course-related code up on <a title="Flora Worley's Github" href="https://github.com/florapdx">my Github account</a>, it's nice to be able to show some visuals per front end projects.</p>
+
+<p>A caveat: I am not an aspiring designer, even if I'm displaying some design work here, lacking as it may be. I do enjoy UX work (and have an interest in usability), but it's more recreational than anything.</p>
+
+<h4>PyLadies central website redesign</h4>
+
+<p class="gallery-description">Technologies: Mynt static site generator (Python-based); HTML5/CSS3; Javascript/jQuery custom meetup.com widget (MeetupAPI integration); Twitter widget; design and custom font usage. Visit <a href="http://www.pyladies.com" alt="Pyladies main site">www.pyladies.com</a></p>
+
+<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/PL_home.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/PL_locations.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/PL_meetup.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/PL_resources.png') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+<h4>Fill-Lite responsive website</h4>
+
+<p class="gallery-description">Technologies: Custom WordPress design and templating; jQuery and jQuery UI integrations; some functional scripting in PHP; responsive CSS and tablet-first design; strategy and consulting on digital properties. Visit <a href="http://www.fill-lite.com" alt="Fill-lite">www.fill-lite.com</a></p>
+
+<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/FL_home_full.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/FL_products.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/FL_200.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/FL_About.jpg') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+<h4>TwtCierge, Geolocation-based Mobile Web App</h4>
+
+<p class="gallery-description">Technologies: HTML5 geolocation; jQuery Mobile; Ajax-powered custom TwitterAPI integration to pull in topical tweets from within 20mi radius of user; custom CSS3 skinning of jQM template; Google Maps API integration, including directions rendering. Project is currently down due to Twitter API changes.</p>
+
+<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_home.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_events.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_deals.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_traffic.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_map1.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/TC_map_2.png') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+<h4>Redesign of Build Local Alliance (professional conservation association) website</h4>
+
+<p class="gallery-description">Technologies: Custom Wordpress development based on Genesis framework; HTML5/CSS3; PHP customizations, and plugin recommendations, integration, and full custom documentation for client; 2nd Lead Developer/Lead UX designer and Information Architect on project. Visit <a href="http://www.buildlocalalliance.org" alt="Build Local Alliance">www.buildlocalalliance.org</a></p>
+
+<div class="gallery">
+<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/BLA_home.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/BLA_memproj.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/BLA_memberapp.jpg') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/BLA_gallery.jpg') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+<h4>UX Design, Branding, Prototyping</h4>
+
+<p class="gallery-description">For various projects, including PyLadies PDX logo design (with Katie Boyd, http://katieboydpdx.com); wireframes from a geolocation/geofenced-based list and reminders app called Hopscotch (project with Katie Boyd), including custom wireframe assets in Adobe Illustrator; iOS programming prototyping of Hopscotch app; sketched wireframes from Portland Parking App, from Designing for Mobile at ISITE Design</p>
+
+<div class="gallery">
+<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/iOS.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/iOS_2.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/app_wireframes.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/app_wireframes_2.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/pdxparking_drawn.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/pdxparking_wireframes.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/pyladies_pdx.png') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+<h4>Noah Bailey responsive portfolio site</h4>
+
+<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/njdb_desktop.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/njdb_tablet.png') }}" width="200" height="200" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/njdb_mobile.png') }}" width="200" height="200" /></div>
+</div>
+
+&nbsp;
+
+
+<!--<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+</div>
+
+<div class="gallery">
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+	<div class="gallery-img"><img src="{{ url_for('static', filename='assets/images/') }}" /></div>
+</div>
+-->
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Events{% endblock title %}
+
+{% block content %}
+	<h1>Events</h1>
+	{% for post in posts %}
+		{% if 'events' in post.tags %}
+		<div class="entry">
+			<h2><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"><i class="icon-calendar"></i> {{ post.title }}</a></h2>
+			<div class="entry-date"><p>{{ post.date }}</p></div>
+            <div class="summary">
+                <p>{{ post.summary }} <span><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"> More <i class="icon-hand-right"></i></a></span></p>
+            </div>
+        </div>
+		{% endif %}
+	{% endfor %}
+{% endblock content %}
